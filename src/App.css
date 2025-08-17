@@ -38,7 +38,7 @@ body {
   }
 }
 /* Container */
-.header {
+header {
   width: 100%;
   padding: 16px 24px;
   background: #ffffff;
@@ -71,4 +71,12 @@ body {
   font-weight: 700;
   color: #1f2937;      /* gray-800 */
   letter-spacing: 0.2px;
+}
+main {
+  padding: 10px 30px;
+}
+
+.ingrident-form {
+  display: flex;
+  justify-content: center;
 }
