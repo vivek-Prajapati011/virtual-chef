@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -32,11 +37,38 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
-.card {
-  padding: 2em;
+/* Container */
+.header {
+  width: 100%;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb; /* light grey */
+  display: flex;
+  justify-content: center; /* centers the brand block like Figma */
+  align-items: center;
+}
+.header {
+  
+}
+/* Brand cluster */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;           /* spacing between logo and text */
 }
 
-.read-the-docs {
-  color: #888;
+/* Logo */
+.brand__logo {
+  width: 32px;         /* tweak to match your Figma size */
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Title */
+.brand__name {
+  font-size: 24px;     /* ≈ text-2xl */
+  font-weight: 700;
+  color: #1f2937;      /* gray-800 */
+  letter-spacing: 0.2px;
 }
