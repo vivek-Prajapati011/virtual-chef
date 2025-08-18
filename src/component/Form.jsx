@@ -23,7 +23,7 @@ const Form = () => {
       {ingridents.length > 0 && (
         <section>
           <h2>Ingrident on hand : </h2>
-          <ul className="Ingrident-list">{ingridents}</ul>
+          <ul className="Ingrident-list">{ingridentItems}</ul>
           {ingridents.length > 3 && (
             <div className="get-recipe-container">
               <div>
