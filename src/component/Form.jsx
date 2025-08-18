@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 const Form = () => {
-  const [ingridents, setIngridents] = useState(["potato", "chicken", "garlic"]);
+  const [ingridents, setIngridents] = useState(false);
   const ingridentItems = ingridents.map((ingrident) => {
     return <li key={ingrident}>{ingrident}</li>;
   });
@@ -21,7 +21,7 @@ const Form = () => {
         <input type="text"  name="ingrident"/>
         <button>Add ingrident</button>
       </form>
-      <section>
+    {ingridents &&  <section>
         <h2>Ingrident on hand : </h2>
         <ul className="Ingrident-list">{ingridents}</ul>
         <div className="get-recipe-container">
@@ -32,7 +32,7 @@ const Form = () => {
           <button> Get recipe</button>
 
         </div>
-      </section>
+      </section>}
     </main>
   );
 };
