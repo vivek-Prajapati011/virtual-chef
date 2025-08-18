@@ -5,34 +5,36 @@ const Form = () => {
     return <li key={ingrident}>{ingrident}</li>;
   });
   const submitHandler = (e) => {
-    e.preventDefault()
-    const formData = new FormData(e.currentTarget)
-    const newIngrident = formData.get("ingrident")
-    
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const newIngrident = formData.get("ingrident");
+
     if (newIngrident.trim() !== "") {
-      
       setIngridents([...ingridents, newIngrident]);
-      e.currentTarget.reset(); 
+      e.currentTarget.reset();
     }
   };
   return (
     <main>
       <form className="ingrident-form " onSubmit={submitHandler}>
-        <input type="text"  name="ingrident"/>
+        <input type="text" name="ingrident" />
         <button>Add ingrident</button>
       </form>
-    {ingridents.length > 0 &&  <section>
-        <h2>Ingrident on hand : </h2>
-        <ul className="Ingrident-list">{ingridents}</ul>
-        <div className="get-recipe-container">
-          <div>
-            <h2>Ready fir recipe?</h2>
-            <p>Generate recipe form list of your ingrident</p>
-          </div>
-          <button> Get recipe</button>
-
-        </div>
-      </section>}
+      {ingridents.length > 0 && (
+        <section>
+          <h2>Ingrident on hand : </h2>
+          <ul className="Ingrident-list">{ingridents}</ul>
+          {ingridents.length > 3 && (
+            <div className="get-recipe-container">
+              <div>
+                <h2>Ready fir recipe?</h2>
+                <p>Generate recipe form list of your ingrident</p>
+              </div>
+              <button> Get recipe</button>
+            </div>
+          )}
+        </section>
+      )}
     </main>
   );
 };
