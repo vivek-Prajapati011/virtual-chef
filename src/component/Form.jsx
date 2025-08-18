@@ -21,7 +21,18 @@ const Form = () => {
         <input type="text"  name="ingrident"/>
         <button>Add ingrident</button>
       </form>
-      <ul>{ingridentItems}</ul>
+      <section>
+        <h2>Ingrident on hand : </h2>
+        <ul className="Ingrident-list">{ingridents}</ul>
+        <div className="get-recipe-container">
+          <div>
+            <h2>Ready fir recipe?</h2>
+            <p>Generate recipe form list of your ingrident</p>
+          </div>
+          <button> Get recipe</button>
+
+        </div>
+      </section>
     </main>
   );
 };
