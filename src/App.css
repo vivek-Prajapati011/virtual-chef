@@ -22,3 +22,120 @@ header {
   align-items: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 } 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.brand__name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827; /* gray-900 */
+}
+
+/* Main Content */
+main {
+  margin-top: 2rem;
+}
+
+/* Form Styling */
+.ingrident-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.ingrident-form input {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 250px;
+}
+
+.ingrident-form input:focus {
+  border-color: #2563eb; /* blue-600 */
+}
+
+.ingrident-form button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ingrident-form button:hover {
+  background: #1e40af; /* darker blue */
+}
+
+/* Ingredient List */
+.Ingrident-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.Ingrident-list li {
+  background: #e0f2fe; /* light blue */
+  color: #1e3a8a; /* dark blue */
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Get Recipe Card */
+.get-recipe-container {
+  margin-top: 2rem;
+  padding: 16px 20px;
+  background: #fef3c7; /* warm yellow */
+  border: 1px solid #fde68a;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.get-recipe-container h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #92400e; /* dark amber */
+}
+
+.get-recipe-container p {
+  margin-bottom: 1rem;
+  color: #78350f; /* darker amber */
+}
+
+.get-recipe-container button {
+  padding: 10px 20px;
+  background: #f59e0b; /* amber */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.get-recipe-container button:hover {
+  background: #b45309; /* darker amber */
+}
